@@ -1,9 +1,14 @@
 import './App.css';
+import Main from './components/Main/MainComponent';
+import { BrowserRouter } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-          <span style={{color: 'white'}}>Subscribe Zainkeepscode</span>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Main />
+      </div>
+    </BrowserRouter>
   );
 }
 

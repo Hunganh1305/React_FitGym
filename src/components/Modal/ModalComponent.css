@@ -1,0 +1,106 @@
+.modalBackGround {
+    width: 500vh;
+    height: 500vh;
+    background-color: rgba(200, 200, 200, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modalContainer {
+    width: 20em;
+    height: 25em;
+    border-radius: 12px;
+    background-color: rgb(246, 209, 183);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: large;
+    margin-left: 30em;
+    margin-top: 10em;
+    z-index: 99;
+}
+
+.modalTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-start-start-radius: 12px;
+    border-start-end-radius: 12px;
+    background: var(--planCard);
+
+}
+
+.form-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: 10px;
+    font-size: 15px;
+    position: relative;
+}
+
+
+
+.form-input {
+    height: 25px;
+    width: 50%;
+    padding-left: 2px;
+    transition: ease .5s;
+    border-radius: 5px;
+}
+
+
+
+.form-input:hover {
+    border: 2px solid var(--orange);
+}
+
+.closeBtn {
+    border: 2px solid var(--gray);
+
+}
+
+.closeBtn:hover {
+    background-color: var(--gray);
+    color: white;
+    cursor: pointer;
+}
+
+.submitBtn {
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+    color: white;
+    font-size: small;
+    margin-left: 1em;
+}
+
+.submitBtn:hover {
+    border: 2px solid var(--orange);
+    background-color: white;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+@media screen and (max-width : 768px) {
+    .modalBackGround {
+        width: 600px;
+        height: 850px;
+        background-color: rgba(200, 200, 200, 0.3);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .modalContainer {
+        width: 20em;
+        height: 25em;
+        border-radius: 12px;
+        background-color: rgb(246, 209, 183);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-size: large;
+        margin-left: 5em;
+        margin-top: 10em;
+        z-index: 99;
+    }
+}
